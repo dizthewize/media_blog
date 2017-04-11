@@ -10,13 +10,14 @@
   * 3-layouts   (page sections, header, footer, sidebar)
   **/
 
-@import "assets/_theme";
-@import "assets/_variables";
+
 @import "../assets/bootstrap/bootstrap_4/sass/_bootstrap";
+@import "assets/_theme";
+@import "assets/_vars";
 
 @import "assets/0-tools/bourbon/_bourbon";
 @import "assets/0-tools/animate.scss/_animate";
-@import "/assets/0-tools/normalize";
+@import "assets/0-tools/normalize";
 
 @import "assets/1-base/_base";
 

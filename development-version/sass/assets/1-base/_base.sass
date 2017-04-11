@@ -1,31 +1,21 @@
 /*  Links
-==============================================
+//==============================================
 a
   color: inherit
   text-decoration: none
-  outline: 0
-  border-bottom: 2px solid hsla(0,0%,0%,0.15)
 
-  &:hover,
-  &:focus
-    color: inherit
-    border-bottom-color: hsla(0,0%,0%,0.3)
 
-  &.white,
-  &.white-hard,
-    border-bottom-color: hsla(0,0%,100%,0.3)
+  //&:hover,
+  //&:focus
 
-    &:hover,
-    &:focus
-      color: white
 
 /*  Typography
-==============================================
+//==============================================
 //	Headings
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: #222
+  color: $white
   font-weight: bold
   margin: 0
   margin-bottom: 20px
@@ -36,9 +26,8 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: -2px
 
 .huge, h1
-  font-size: 68px
-  line-height: 1.05
-  letter-spacing: -1px
+  font-weight: 700
+  font-size: 4em
 
 .large, h2
   font-size: 42px
@@ -132,7 +121,7 @@ h1, h2, h3, h4, h5, h6
   text-align: left
 
 body
-  background-color: white
+  background-color: $darkPrimaryColor
   font-size: 14px
   line-height: 1.6
   font-family: 'Roboto', sans-serif
