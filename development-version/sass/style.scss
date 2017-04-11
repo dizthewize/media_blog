@@ -2,22 +2,24 @@
   *  Description: This work flow is based on SMACSS but my custom version
   *  Version: 1.0.0
   *  Author: Martez Conner
-  *  base   (resets, element defaults, default font sizes)
-  *  layout   (header, footer, sections, content, sidebar)
-  *  modules   (thumbnails, button modules, tabs, carousel)
-  *  states   (hover, hide text/div, animation)
-  *  responsive   (hover, hide text/div, animation)
+  *  variables   (All variables are created or defined here for other sass files)
   *  theme   (apply colors and backgrounds)
+  *  0-tools   (resets, bourbon, normalize, animate.scss)
+  *  1-base   (element defaults, default font sizes)
+  *  2-modules   (thumbnails, button modules, tabs, carousel)
+  * 3-layouts   (page sections, header, footer, sidebar)
   **/
 
-
-@import "../assets/scss/bourbon/_bourbon";
-@import "../assets/scss/normalize";
+@import "assets/_theme";
+@import "assets/_variables";
 @import "../assets/bootstrap/bootstrap_4/sass/_bootstrap";
-@import "custom/_base";
-@import "custom/_layout";
-@import "custom/_module";
-@import "custom/_responsive";
-@import "custom/_state";
-@import "custom/_theme";
-@import "custom/_variables";
+
+@import "assets/0-tools/bourbon/_bourbon";
+@import "assets/0-tools/animate.scss/_animate";
+@import "/assets/0-tools/normalize";
+
+@import "assets/1-base/_base";
+
+@import "assets/2-modules/_module";
+
+@import "assets/3-layouts/_defaultlayouts";
