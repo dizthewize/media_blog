@@ -6,8 +6,8 @@
   *  theme   (apply colors and backgrounds)
   *  0-tools   (resets, bourbon, normalize, animate.scss)
   *  1-base   (element defaults, default font sizes)
-  *  2-modules   (thumbnails, button modules, tabs, carousel)
-  * 3-layouts   (page sections, header, footer, sidebar)
+  *    modules   (thumbnails, button modules, tabs, carousel)
+  * 2-layouts   (create sass layouts for pages)
   **/
 
 
@@ -20,7 +20,4 @@
 @import "assets/0-tools/normalize";
 
 @import "assets/1-base/_base";
-
-@import "assets/2-modules/_module";
-
-@import "assets/3-layouts/_defaultlayouts";
+@import "assets/1-base/_module";
