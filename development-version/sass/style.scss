@@ -6,12 +6,12 @@
   *  theme   (apply colors and backgrounds)
   *  0-tools   (resets, bourbon, normalize, animate.scss)
   *  1-base   (element defaults, default font sizes)
-  *    modules   (thumbnails, button modules, tabs, carousel)
-  * 2-layouts   (create sass layouts for pages)
+  * 2-modules   (thumbnails, button modules, tabs, carousel)
+  * 3-layouts   (create sass layouts for pages)
   **/
 
 
-@import "../assets/bootstrap/bootstrap_4/sass/_bootstrap";
+@import "../assets/bootstrap/bootstrap_3/sass/_bootstrap";
 @import "assets/_theme";
 @import "assets/_vars";
 
@@ -20,4 +20,9 @@
 @import "assets/0-tools/normalize";
 
 @import "assets/1-base/_base";
-@import "assets/1-base/_module";
+
+@import "assets/2-modules/_module";
+
+@import "assets/3-layouts/_header";
+@import "assets/3-layouts/_articlecolumns";
+@import "assets/3-layouts/_footer";
